@@ -8,22 +8,23 @@ let remplaceECar = (texte) => {
     return text;
 }
 let concatString = (texte1, texte2) => {
-
+    return  (texte1 + texte2);
 }
 let afficherCar5 =  (texte) => {
-
+    const i =4;
+    return (texte[i]);
 }
 let afficher9Car =  (texte) => {
-
+    return (texte.slice(0,9));
 }
 let majusculeString =  (texte) => {
-
+    return (texte.toUpperCase());
 }
 let minusculeString =  (texte) => {
-
+    return (texte.toLowerCase());
 }
 let SupprEspaceString =  (texte) => {
-
+    return (texte.trim());
 }
 let IsString =  (texte) => {
 
