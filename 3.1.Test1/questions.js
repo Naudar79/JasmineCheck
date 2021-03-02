@@ -53,7 +53,7 @@ let valeurAbsolueArray =  (array) => {
     return  array.map(Math.abs);
 }
 let sufaceCercle =  (rayon) => {
-
+ return Math.round((Math.PI * (rayon*rayon)));
 }
 let hypothenuse =  (ab, ac) => {
     return new Number(Math.hypot(ab,ac));
