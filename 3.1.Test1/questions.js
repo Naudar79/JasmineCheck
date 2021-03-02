@@ -27,42 +27,40 @@ let SupprEspaceString =  (texte) => {
     return (texte.trim());
 }
 let IsString =  (texte) => {
- return (typeof texte); //fail !
+    return typeof texte === 'string';
 }
 
 let AfficherExtensionString =  (texte) => {
-
+    return texte.split(".").pop();
 }
 let NombreEspaceString =  (texte) => {
-
+    return texte.split(' ').length -1;
 }
 let InverseString =  (texte) => {
-    let splArray=texte.split(" ");//split
-    let revArray= splArray.reverse();//reverse
-    let joinArray= revArray.join(" ");//join
-    return (joinArray);
+    return texte.split('').reverse().join('');
 }
 
 /**
  * Exercices sur les nombres et les caluls mathématiques
  */
 let calculPuissance =  (x, y) => {
-
+    return new Number(Math.pow(x,y));
 }
 let valeurAbsolue =  (nombre) => {
-
+    return new Number(Math.abs(nombre));
 }
 let valeurAbsolueArray =  (array) => {
-
+    return  array.map(Math.abs);
 }
 let sufaceCercle =  (rayon) => {
 
 }
 let hypothenuse =  (ab, ac) => {
-
+    return new Number(Math.hypot(ab,ac));
 }
 let calculIMC =  (poids, taille) => {
         let result = (poids/(taille*taille));
         let imc = result.toFixed(2);
-        return(imc);
+        console.log(imc);
+        return new Number (imc);
 }
