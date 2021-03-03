@@ -1,9 +1,11 @@
-let CreationTableauLangages =  () => {
+let langages = ['Html','CSS','Java','PHP'];
 
+let CreationTableauLangages =  () => {
+    return langages;
 }
 
 let CreationTableauNombres =  () => {
-
+ return [0,1,2,3,4,5];
 }
 
 let RemplacementElement =  (langages) => {
