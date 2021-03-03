@@ -3,11 +3,11 @@ let selectElementsStartingWithA = (array) => {
 }
 
 let selectElementsStartingWithVowel = (array) => {
-    return 'Write your method here';
+    return array.filter(element => /^[aeiou]/gi.test(element));
 }
 
 let removeNullElements = (array) => {
-    return 'Write your method here';
+    return array.filter(element => element != null);
 }
 
 let removeNullAndFalseElements = (array) => {
