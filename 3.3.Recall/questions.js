@@ -11,19 +11,19 @@ let removeNullElements = (array) => {
 }
 
 let removeNullAndFalseElements = (array) => {
-    return 'Write your method here';
+    return array.filter(element => element != null && element !== false);
 }
 
 let reverseWordsInArray = (array) => {
-    return 'Write your method here';
+    return array.map(element => element.split('').reverse().join(''));
 }
 
 let everyPossiblePair = (array) => {
-    return 'Write your method here';
+    return 'Write your method here'; // i don't know
 }
 
 let allElementsExceptFirstThree = (array) => {
-    return 'Write your method here';
+    return array.splice(3);
 }
 
 let addElementToBeginning = (array, element) => {
