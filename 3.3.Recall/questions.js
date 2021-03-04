@@ -19,7 +19,7 @@ let reverseWordsInArray = (array) => {
 }
 
 let everyPossiblePair = (array) => {
-    return 'Write your method here'; // i don't know
+    return 'Write your method here'; // fail
 }
 
 let allElementsExceptFirstThree = (array) => {
@@ -27,7 +27,7 @@ let allElementsExceptFirstThree = (array) => {
 }
 
 let addElementToBeginning = (array, element) => {
-    return 'Write your method here';
+    return 'Write your method here'; // fail
 }
 
 let sortByLastLetter = (array) => {
@@ -35,31 +35,35 @@ let sortByLastLetter = (array) => {
 }
 
 let getFirstHalf = (string) => {
-    return 'Write your method here';
+    return string.slice(0, Math.round(string.length / 2));
 }
 
 let makeNegative = (number) => {
-    return 'Write your method here';
+    return -Math.abs(number);;
 }
 
 let numberOfPalindromes = (array) => {
-    return 'Write your method here';
+    return array.filter(element => element === element.split('').reverse().join('')).length;
 }
 
 let shortestWord = (array) => {
-    return 'Write your method here';
+    return array.reduce((word, current) => {
+        if (word.length < current.length) { return word; } else { return current; }
+    });
 }
 
 let longestWord = (array) => {
-    return 'Write your method here';
+    return array.reduce((word, now) => {
+        if (word.length > now.length) { return word; } else { return now; }
+    });
 }
 
 let sumNumbers = (array) => {
-    return 'Write your method here';
+    return array.reduce((sumNb, element) => sumNb + element, 0);
 }
 
 let repeatElements = (array) => {
-    return 'Write your method here';
+    return array.concat(array);
 }
 
 let stringToNumber = (string) => {
