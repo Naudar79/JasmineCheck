@@ -113,11 +113,11 @@ let formatDateNicely = (date) => {
 }
 
 let getDomainName = (string) => {
-    return 'Write your method here';
+    return string.split('@').pop().split('.com').shift();
 }
 
 let titleize = (string) => {
-    return 'Write your method here';
+    return 'Write your method here'; // fail
 }
 
 let checkForSpecialCharacters = (string) => {
