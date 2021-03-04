@@ -32,7 +32,7 @@ let addElementToBeginning = (array, element) => {
 }
 
 let sortByLastLetter = (array) => {
-    return 'Write your method here';
+    return 'Write your method here'; // fail
 }
 
 let getFirstHalf = (string) => {
@@ -80,11 +80,11 @@ let getElementsUntilGreaterThanFive = (array) => {
 }
 
 let convertArrayToObject = (array) => {
-    return 'Write your method here';
+    return 'Write your method here'; //fail
 }
 
 let getAllLetters = (array) => {
-    return; //fail
+    return 'Write your method here'; //fail
 }
 
 let swapKeysAndValues = (object) => {
@@ -105,11 +105,11 @@ let removeCapitals = (string) => {
 }
 
 let roundUp = (number) => {
-    return 'Write your method here';
+    return Math.ceil(number);
 }
 
 let formatDateNicely = (date) => {
-    return 'Write your method here';
+    return new Intl.DateTimeFormat("en-GB", { day: '2-digit', month: '2-digit', year: 'numeric' }).format(date);
 }
 
 let getDomainName = (string) => {
