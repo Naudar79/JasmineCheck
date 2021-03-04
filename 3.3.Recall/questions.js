@@ -27,7 +27,8 @@ let allElementsExceptFirstThree = (array) => {
 }
 
 let addElementToBeginning = (array, element) => {
-    return 'Write your method here'; // fail
+    array.unshift(element)
+    return array;
 }
 
 let sortByLastLetter = (array) => {
@@ -67,15 +68,15 @@ let repeatElements = (array) => {
 }
 
 let stringToNumber = (string) => {
-    return 'Write your method here';
+    return parseInt(string);
 }
 
 let calculateAverage = (array) => {
-    return 'Write your method here';
+    return array.reduce((sum, element) => sum + element, 0) / array.length;
 }
 
 let getElementsUntilGreaterThanFive = (array) => {
-    return 'Write your method here';
+    return array.splice(0, 6);
 }
 
 let convertArrayToObject = (array) => {
@@ -83,19 +84,24 @@ let convertArrayToObject = (array) => {
 }
 
 let getAllLetters = (array) => {
-    return 'Write your method here';
+    return; //fail
 }
 
 let swapKeysAndValues = (object) => {
-    return 'Write your method here';
+    return Object.keys(object).reduce((element, key) => {
+        element[object[key]] = key;
+        return element;
+    }, {})
 }
 
 let sumKeysAndValues = (object) => {
-    return 'Write your method here';
+    return Object.keys(object).reduce((element, key) => {
+        return (element = element + parseInt(object[key]) + parseInt(key));
+    }, 0);
 }
 
 let removeCapitals = (string) => {
-    return 'Write your method here';
+    return string.split("").filter(element => element.charCodeAt(0) < 65 || element.charCodeAt(0) > 90).join("");
 }
 
 let roundUp = (number) => {
